@@ -11,3 +11,33 @@ body {
     height: 100vh;
     margin: 0 auto;
 }
+
+.fret-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .fret {
+    background-color: #614e5e;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px 8px 0 0;
+} */
+
+.fret {
+    border-bottom: 8px solid #614e5e;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inlet {
+    display: block;
+    background-color: #614e5e;
+    width: 30px;
+    height: 20%;
+    border-radius: 30px;
+}
