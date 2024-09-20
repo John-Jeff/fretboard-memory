@@ -102,13 +102,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: calc(50% - 6px);
+    top: calc(50% - 4px);
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #a3b0b8;
     width: 1.8rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    /* animation: 500ms grow cubic-bezier(0.18,0.89,0.32,1.27); */
 }
 
 /* .string-sec {
@@ -131,4 +132,13 @@ body {
     background-color: #a3b0b8;
     width: 4px;
     height: 100%;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
